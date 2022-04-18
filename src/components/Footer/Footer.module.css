@@ -1,0 +1,81 @@
+.footer {
+  width: 100%;
+  height: 500px;
+  background-color: var(--color2);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  padding: 100px 245px;
+}
+
+.title {
+  letter-spacing: 0.985em;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--color1);
+}
+
+.linksWrapper {
+  margin-left: 150px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 370px;
+}
+
+.link {
+  line-height: 22px;
+  outline: none;
+  text-decoration: none;
+  font-family: var(--OpenSans300);
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: var(--color1);
+}
+
+.link:not(:last-child) {
+  margin-bottom: 33px;
+}
+
+.link:nth-child(6n) {
+  margin-bottom: 0;
+}
+
+.contacts {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.makeOrder {
+  width: 230px;
+  height: 57px;
+  border: none;
+  border: 1px solid var(--color1);
+  background: none;
+  border-radius: 10px;
+  font-family: var(--OpenSans300);
+  color: var(--color1);
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+.phone {
+  letter-spacing: 0.05em;
+  margin-top: 30px;
+  font-family: var(--OpenSans300);
+  color: var(--color1);
+  font-size: 14px;
+}
+
+.mail {
+  letter-spacing: 0.05em;
+  margin-top: 30px;
+  font-family: var(--OpenSans300);
+  color: var(--white);
+  font-size: 14px;
+}
