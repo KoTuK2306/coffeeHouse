@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/coffeeHouse/static/css/main.e30b12c7.css",
+    "main.js": "/coffeeHouse/static/js/main.c9b00b12.js",
+    "static/js/787.28cb0dcd.chunk.js": "/coffeeHouse/static/js/787.28cb0dcd.chunk.js",
+    "static/media/OpenSans.ttf": "/coffeeHouse/static/media/OpenSans.a42bbe687810bdc6e9e8.ttf",
+    "static/media/OpenSans400.ttf": "/coffeeHouse/static/media/OpenSans400.d7d7b8359eeb9cddfba6.ttf",
+    "static/media/OpenSans300.ttf": "/coffeeHouse/static/media/OpenSans300.846a12caf01a940847a7.ttf",
+    "index.html": "/coffeeHouse/index.html",
+    "main.e30b12c7.css.map": "/coffeeHouse/static/css/main.e30b12c7.css.map",
+    "main.c9b00b12.js.map": "/coffeeHouse/static/js/main.c9b00b12.js.map",
+    "787.28cb0dcd.chunk.js.map": "/coffeeHouse/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e30b12c7.css",
+    "static/js/main.c9b00b12.js"
+  ]
+}
