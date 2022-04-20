@@ -1,18 +1,18 @@
-const makePathToImage = (path: string) => `${process.env.PUBLIC_URL}/images/coffee/${path}.png`;
+import { makePathToPublic } from "./utils/makePathToPublic";
 
 const coffee = {
-  espresso: makePathToImage("espresso"),
-  macchiato: makePathToImage("macchiato"),
-  latte: makePathToImage("latte"),
-  latteNesselrode: makePathToImage("latteNesselrode"),
-  latteMacchiato: makePathToImage("latteMacchiato"),
-  cortado: makePathToImage("cortado"),
-  jupiterRings: makePathToImage("jupiterRings"),
-  сatalan: makePathToImage("сatalan"),
-  cappuccino: makePathToImage("cappuccino"),
-  espressoNaranja: makePathToImage("espressoNaranja"),
-  espressoGingerbread: makePathToImage("espressoGingerbread"),
-  hotIceberg: makePathToImage("hotIceberg"),
+  espresso: makePathToPublic("/images/coffee/espresso.png"),
+  macchiato: makePathToPublic("/images/coffee/macchiato.png"),
+  latte: makePathToPublic("/images/coffee/latte.png"),
+  latteNesselrode: makePathToPublic("/images/coffee/latteNesselrode.png"),
+  latteMacchiato: makePathToPublic("/images/coffee/latteMacchiato.png"),
+  cortado: makePathToPublic("/images/coffee/cortado.png"),
+  jupiterRings: makePathToPublic("/images/coffee/jupiterRings.png"),
+  сatalan: makePathToPublic("/images/coffee/сatalan.png"),
+  cappuccino: makePathToPublic("/images/coffee/cappuccino.png"),
+  espressoNaranja: makePathToPublic("/images/coffee/espressoNaranja.png"),
+  espressoGingerbread: makePathToPublic("/images/coffee/espressoGingerbread.png"),
+  hotIceberg: makePathToPublic("/images/coffee/hotIceberg.png"),
 };
 
 export const coffeeImages = [

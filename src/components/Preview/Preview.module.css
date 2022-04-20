@@ -4,7 +4,7 @@
   justify-content: space-between;
   width: 100%;
   height: 1021px;
-  background-color: var(--color1);
+  background-color: var(--whiteСhocolate);
 }
 
 .textWithImage {
@@ -21,7 +21,7 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 48px;
-  color: var(--color2);
+  color: var(--milkCoffee);
   letter-spacing: 0.05em;
 }
 
@@ -30,7 +30,7 @@
   text-transform: uppercase;
   font-size: 26px;
   font-family: var(--OpenSans300);
-  color: var(--color2);
+  color: var(--milkCoffee);
   letter-spacing: 0.05em;
 }
 
@@ -39,11 +39,11 @@
   width: 322px;
   height: 68px;
   border-radius: 7px;
-  background: var(--color3);
+  background: var(--milkChocolate);
   outline: none;
   border: none;
   font-size: 16px;
-  color: var(--color1);
+  color: var(--whiteСhocolate);
   font-family: var(--OpenSans300);
   cursor: pointer;
 }
@@ -74,22 +74,19 @@
   font-family: var(--OpenSans400);
   letter-spacing: 0.05em;
   margin-bottom: 70px;
-  color: var(--color2);
+  color: var(--milkCoffee);
 }
 
 .imagesWrapper {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 30px;
 }
 
-.offferImage {
+.offerImage {
   margin: 0;
   padding: 0;
   width: 350px;
   height: 216px;
   border-radius: 10px;
-}
-
-.offferImage:not(:first-child) {
-  margin-left: 30px;
 }

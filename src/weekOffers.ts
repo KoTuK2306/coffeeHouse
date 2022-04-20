@@ -1,22 +1,16 @@
-const makePathToImage = (path: string) => `${process.env.PUBLIC_URL}/images/weekOffers/${path}.png`;
-
-const icons = {
-  one: makePathToImage("imageOne"),
-  two: makePathToImage("imageTwo"),
-  three: makePathToImage("imageThree"),
-};
+import { makePathToPublic } from "./utils/makePathToPublic";
 
 export const weekOffers = [
   {
-    id: "one",
-    icon: icons.one,
+    id: "cupOfCoffee",
+    icon: makePathToPublic("/images/weekOffers/imageOne.png"),
   },
   {
-    id: "two",
-    icon: icons.two,
+    id: "coffeeWithChocolate",
+    icon: makePathToPublic("/images/weekOffers/imageTwo.png"),
   },
   {
-    id: "three",
-    icon: icons.three,
+    id: "cakeWithCoffee",
+    icon: makePathToPublic("/images/weekOffers/imageThree.png"),
   },
 ];

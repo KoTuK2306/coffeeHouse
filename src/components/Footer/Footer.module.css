@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   height: 500px;
-  background-color: var(--color2);
+  background-color: var(--milkCoffee);
 }
 
 .content {
@@ -15,7 +15,7 @@
   font-weight: 600;
   font-size: 16px;
   text-transform: uppercase;
-  color: var(--color1);
+  color: var(--whiteСhocolate);
 }
 
 .linksWrapper {
@@ -34,7 +34,7 @@
   font-family: var(--OpenSans300);
   font-size: 16px;
   letter-spacing: 0.05em;
-  color: var(--color1);
+  color: var(--whiteСhocolate);
 }
 
 .link:not(:last-child) {
@@ -55,11 +55,11 @@
   width: 230px;
   height: 57px;
   border: none;
-  border: 1px solid var(--color1);
+  border: 1px solid var(--whiteСhocolate);
   background: none;
   border-radius: 10px;
   font-family: var(--OpenSans300);
-  color: var(--color1);
+  color: var(--whiteСhocolate);
   font-size: 14px;
   letter-spacing: 0.05em;
 }
@@ -68,8 +68,9 @@
   letter-spacing: 0.05em;
   margin-top: 30px;
   font-family: var(--OpenSans300);
-  color: var(--color1);
+  color: var(--whiteСhocolate);
   font-size: 14px;
+  text-decoration: none;
 }
 
 .mail {
@@ -78,4 +79,5 @@
   font-family: var(--OpenSans300);
   color: var(--white);
   font-size: 14px;
+  text-decoration: none;
 }

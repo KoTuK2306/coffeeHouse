@@ -1,7 +1,7 @@
 .reasons {
   width: 100%;
   height: 565px;
-  background-color: var(--color1);
+  background-color: var(--whiteСhocolate);
 }
 
 .content {
@@ -17,7 +17,7 @@
   font-family: var(--OpenSans400);
   font-size: 24px;
   text-transform: uppercase;
-  color: var(--color2);
+  color: var(--milkCoffee);
   margin-top: 115px;
   letter-spacing: 0.05em;
 }
@@ -50,7 +50,7 @@
 }
 
 .icon {
-  color: var(--color2);
+  color: var(--milkCoffee);
 }
 
 .description {
@@ -58,7 +58,7 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-size: 13px;
-  color: var(--color2);
+  color: var(--milkCoffee);
   margin-top: 20px;
   line-height: 18px;
   text-align: center;

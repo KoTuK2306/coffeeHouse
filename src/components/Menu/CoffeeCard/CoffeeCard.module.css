@@ -5,7 +5,7 @@
   align-items: center;
   width: 255px;
   height: 340px;
-  background-color: var(--color1);
+  background-color: var(--whiteСhocolate);
   box-shadow: 0px 0px 10px rgba(255, 249, 216, 0.35);
   border-radius: 7px;
 }
@@ -30,7 +30,7 @@
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 0.05em;
-  color: var(--color2);
+  color: var(--milkCoffee);
   letter-spacing: 0.05em;
   width: 185px;
 }
@@ -39,7 +39,7 @@
   margin-top: 15px;
   font-weight: 400;
   font-size: 14px;
-  color: var(--color2);
+  color: var(--milkCoffee);
   letter-spacing: 0.05em;
   width: 185px;
 }

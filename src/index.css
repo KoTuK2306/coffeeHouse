@@ -14,13 +14,12 @@
 }
 
 :root {
-  --mainMargin: 10%;
   --primaryFont: OpenSans, sans-serif;
   --OpenSans300: OpenSans300, sans-serif;
   --OpenSans400: OpenSans400, sans-serif;
-  --color1: #fff9d8;
-  --color2: #624530;
-  --color3: #9a6137;
+  --whiteСhocolate: #fff9d8;
+  --milkCoffee: #624530;
+  --milkChocolate: #9a6137;
   --white: #ffffff;
 }
 
