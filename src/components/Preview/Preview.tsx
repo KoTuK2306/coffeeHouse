@@ -9,15 +9,15 @@ export const Preview: FC = () => {
     <section className={classes.preview}>
       <div className={classes.textWithImage}>
         <div className={classes.textWrapper}>
-          <p className={classes.bigText}>горячий кофе -</p>
-          <p className={classes.smallText}>всегда самый вкусный</p>
+          <p className={classes.title}>горячий кофе -</p>
+          <p className={classes.subTitle}>всегда самый вкусный</p>
           <button className={classes.button}>Заказать</button>
         </div>
         <img className={classes.coffeeBeans} src={makePathToPublic("/coffeeBeans.png")} alt="cofeeBeans" />
       </div>
       <div className={classes.chevronWrapper}>
         <Link to="menu" smooth={true} offset={-60} duration={1000}>
-          <img className={classes.chevron} src={makePathToPublic("/chevron.svg")} alt="chevron" />
+          <img className={classes.chevron} src={makePathToPublic("/bigChevron.svg")} alt="chevron" />
         </Link>
       </div>
       <div className={classes.weekOffers}>

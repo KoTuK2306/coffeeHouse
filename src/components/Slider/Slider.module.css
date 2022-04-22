@@ -1,0 +1,65 @@
+.slider {
+  display: grid;
+  grid-gap: 35px;
+  grid-template-columns: repeat(3, auto);
+  flex: none;
+  align-items: center;
+}
+
+.sliderButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: var(--whiteСhocolate);
+}
+
+.viewport {
+  overflow: hidden;
+}
+
+.chevron {
+  width: 14px;
+  height: 14px;
+}
+
+.rotated180 {
+  transform: rotate(180deg);
+}
+
+.cardsWrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 80px;
+  width: 935px;
+  background-color: none;
+  align-items: center;
+  padding: 10px 5px;
+  transition: all 1s ease-in-out;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  margin: 60px 0;
+}
+
+.pageLink {
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--whiteСhocolate);
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--liteOrange);
+}

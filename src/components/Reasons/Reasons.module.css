@@ -1,6 +1,5 @@
 .reasons {
   width: 100%;
-  height: 565px;
   background-color: var(--whiteСhocolate);
 }
 
@@ -18,13 +17,14 @@
   font-size: 24px;
   text-transform: uppercase;
   color: var(--milkCoffee);
-  margin-top: 115px;
+  margin: 110px 0;
   letter-spacing: 0.05em;
 }
 
 .cardsWrapper {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 125px;
   margin: 0 auto 100px auto;
 }
 
@@ -33,10 +33,6 @@
   flex-direction: column;
   align-items: center;
   width: 160px;
-}
-
-.card:not(:first-child) {
-  margin-left: 125px;
 }
 
 .iconWrapper {

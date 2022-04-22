@@ -20,11 +20,15 @@
   --whiteСhocolate: #fff9d8;
   --milkCoffee: #624530;
   --milkChocolate: #9a6137;
+  --liteOrange: #e9aa7c;
   --white: #ffffff;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: var(--primaryFont);
 }

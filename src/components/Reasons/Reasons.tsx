@@ -1,6 +1,6 @@
 import { FC } from "react";
-import classes from "./Reasons.module.css";
 import { reasonsIcons } from "../../reasonsIcons";
+import classes from "./Reasons.module.css";
 
 export const Reasons: FC = () => {
   return (

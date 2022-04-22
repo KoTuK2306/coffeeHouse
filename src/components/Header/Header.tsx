@@ -3,13 +3,7 @@ import { Link } from "../../interfaces/Links";
 import { makePathToPublic } from "../../utils/makePathToPublic";
 import classes from "./Header.module.css";
 
-interface linkTypes {
-  id: string;
-  href: string;
-  title: string;
-}
-
-const headerLinks: linkTypes[] = [
+const headerLinks: Link[] = [
   { id: "home", href: "#", title: "Главная" },
   { id: "aboutUs", href: "#", title: "О нас" },
   { id: "toOrder", href: "#", title: "Заказать" },
@@ -22,8 +16,8 @@ export const Header: FC = () => {
     <header className={classes.header}>
       <div className={classes.headerContent}>
         <h1 className={classes.title}>coffee</h1>
-        <div className={classes.buttonsWrapper}>
-          {headerLinks.map(({ id, href, title }: Link) => (
+        <div className={classes.linksWrapper}>
+          {headerLinks.map(({ id, href, title }) => (
             <a key={id} className={classes.link} href={href}>
               {title}
             </a>
