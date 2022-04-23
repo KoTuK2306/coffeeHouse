@@ -1,20 +1,14 @@
-import { FC, useState, ReactNode, Children } from "react";
-import { CARD_WIDTH } from "../../constants/cardWidth";
+import { FC, useState, Children } from "react";
 import { makePathToPublic } from "../../utils/makePathToPublic";
 import classes from "./Slider.module.css";
 
-interface SliderTypes {
-  children: ReactNode;
-}
+const CARD_WIDTH = 335;
+type OptionType = "left" | "right";
 
-interface optionType {
-  option: "left" | "right";
-}
-
-export const Slider: FC<SliderTypes> = ({ children }) => {
+export const Slider: FC = ({ children }) => {
   const [translate, setTranslate] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
-  const pagesCount = Children.toArray(children).length - 2;
+  const pagesCount = Children.count(children) - 2;
 
   const paginate = (pageNumber: number) => {
     setCurrentPage(pageNumber);
@@ -25,7 +19,7 @@ export const Slider: FC<SliderTypes> = ({ children }) => {
     setTranslate(-CARD_WIDTH * (pageNumber - 1));
   };
 
-  const shiftSlider = (option: optionType["option"]) => {
+  const shiftSlider = (option: OptionType) => {
     if (option === "right") {
       setCurrentPage(currentPage + 1);
       if (currentPage === pagesCount) {

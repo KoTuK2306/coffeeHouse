@@ -13,7 +13,6 @@ export const Preview: FC = () => {
           <p className={classes.subTitle}>всегда самый вкусный</p>
           <button className={classes.button}>Заказать</button>
         </div>
-        <img className={classes.coffeeBeans} src={makePathToPublic("/coffeeBeans.png")} alt="cofeeBeans" />
       </div>
       <div className={classes.chevronWrapper}>
         <Link to="menu" smooth={true} offset={-60} duration={1000}>
@@ -24,7 +23,7 @@ export const Preview: FC = () => {
         <h2 className={classes.offerTitle}>предложения недели</h2>
         <div className={classes.imagesWrapper}>
           {weekOffers.map(({ id, icon }) => (
-            <img className={classes.offerImage} key={id} src={icon} alt={`weekOffer${id}`} />
+            <img className={classes.offerImage} key={id} src={icon} alt={id} />
           ))}
         </div>
       </div>

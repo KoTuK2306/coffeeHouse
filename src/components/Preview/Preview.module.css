@@ -1,13 +1,15 @@
 .preview {
   display: flex;
   flex-direction: column;
+  background: no-repeat url("/public/coffeeBeans.png");
+  background-position: right top;
+  background-size: 55%;
   width: 100%;
   background-color: var(--whiteСhocolate);
 }
 
 .textWithImage {
   display: flex;
-  justify-content: space-between;
   padding-left: 245px;
 }
 

@@ -1,3 +1,5 @@
+import { Reasons } from "./interfaces/Reasons";
+
 const icons = {
   cupOfCoffee: (
     <svg width="72" height="94" viewBox="0 0 72 94" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +28,7 @@ const icons = {
   ),
 };
 
-export const reasonsIcons = [
+export const reasonsIcons: Reasons[] = [
   {
     id: "cupOfCoffee",
     description: "можно взять с собой",
