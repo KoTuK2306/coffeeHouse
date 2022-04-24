@@ -1,12 +1,10 @@
 .footer {
-  width: 100%;
   background-color: var(--milkCoffee);
 }
 
 .content {
   display: flex;
   flex-direction: row;
-  padding: 100px 245px;
 }
 
 .title {
@@ -32,7 +30,7 @@
   text-decoration: none;
   font-family: var(--OpenSans300);
   font-size: 16px;
-  letter-spacing: 0.05em;
+  letter-spacing: var(--mainLetterSpacing);
   color: var(--whiteСhocolate);
 }
 
@@ -52,20 +50,20 @@
   font-family: var(--OpenSans300);
   color: var(--whiteСhocolate);
   font-size: 14px;
-  letter-spacing: 0.05em;
+  letter-spacing: var(--mainLetterSpacing);
 }
 
 .phone {
-  letter-spacing: 0.05em;
   margin-top: 30px;
   font-family: var(--OpenSans300);
+  letter-spacing: var(--mainLetterSpacing);
   color: var(--whiteСhocolate);
   font-size: 14px;
   text-decoration: none;
 }
 
 .mail {
-  letter-spacing: 0.05em;
+  letter-spacing: var(--mainLetterSpacing);
   margin-top: 30px;
   font-family: var(--OpenSans300);
   color: var(--white);

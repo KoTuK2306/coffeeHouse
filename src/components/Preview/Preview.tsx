@@ -2,11 +2,12 @@ import { FC } from "react";
 import { Link } from "react-scroll";
 import { weekOffers } from "../../weekOffers";
 import { makePathToPublic } from "../../utils/makePathToPublic";
+import { MainPadding } from "../../layouts/MainPadding";
 import classes from "./Preview.module.css";
 
 export const Preview: FC = () => {
   return (
-    <section className={classes.preview}>
+    <MainPadding className={classes.preview}>
       <div className={classes.textWithImage}>
         <div className={classes.textWrapper}>
           <p className={classes.title}>горячий кофе -</p>
@@ -27,6 +28,6 @@ export const Preview: FC = () => {
           ))}
         </div>
       </div>
-    </section>
+    </MainPadding>
   );
 };

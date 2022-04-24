@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { Link } from "../../interfaces/Links";
+import { MainPadding } from "../../layouts/MainPadding";
 import classes from "./Footer.module.css";
 
 const links: Link[] = [
@@ -17,7 +18,7 @@ const links: Link[] = [
 
 export const Footer: FC = () => {
   return (
-    <footer className={classes.footer}>
+    <MainPadding className={classes.footer}>
       <div className={classes.content}>
         <h1 className={classes.title}>coffee</h1>
         <div className={classes.linksWrapper}>
@@ -37,6 +38,6 @@ export const Footer: FC = () => {
           </a>
         </div>
       </div>
-    </footer>
+    </MainPadding>
   );
 };

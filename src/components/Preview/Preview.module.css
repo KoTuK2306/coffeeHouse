@@ -1,16 +1,12 @@
 .preview {
-  display: flex;
-  flex-direction: column;
   background: no-repeat url("/public/coffeeBeans.png");
   background-position: right top;
   background-size: 55%;
-  width: 100%;
   background-color: var(--whiteСhocolate);
 }
 
 .textWithImage {
   display: flex;
-  padding-left: 245px;
 }
 
 .textWrapper {
@@ -22,7 +18,7 @@
   font-weight: 700;
   font-size: 48px;
   color: var(--milkCoffee);
-  letter-spacing: 0.05em;
+  letter-spacing: var(--mainLetterSpacing);
 }
 
 .subTitle {
@@ -31,7 +27,7 @@
   font-size: 26px;
   font-family: var(--OpenSans300);
   color: var(--milkCoffee);
-  letter-spacing: 0.05em;
+  letter-spacing: var(--mainLetterSpacing);
 }
 
 .button {
@@ -48,10 +44,6 @@
   cursor: pointer;
 }
 
-.coffeeBeans {
-  height: 413px;
-}
-
 .chevronWrapper {
   margin-top: 90px;
   display: flex;
@@ -64,24 +56,23 @@
 }
 
 .weekOffers {
+  display: grid;
   display: flex;
   flex-direction: column;
-  padding: 0 245px;
-  margin-bottom: 87px;
 }
 
 .offerTitle {
   margin-top: 90px;
   text-transform: uppercase;
   font-family: var(--OpenSans400);
-  letter-spacing: 0.05em;
+  letter-spacing: var(--mainLetterSpacing);
   margin-bottom: 70px;
   color: var(--milkCoffee);
 }
 
 .imagesWrapper {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, max-content);
   grid-gap: 30px;
 }
 

@@ -25,9 +25,8 @@
   margin-top: 20px;
   font-weight: 600;
   font-size: 15px;
-  letter-spacing: 0.05em;
+  letter-spacing: var(--mainLetterSpacing);
   color: var(--milkCoffee);
-  letter-spacing: 0.05em;
   width: 185px;
 }
 
@@ -36,6 +35,6 @@
   font-weight: 400;
   font-size: 14px;
   color: var(--milkCoffee);
-  letter-spacing: 0.05em;
+  letter-spacing: var(--mainLetterSpacing);
   width: 185px;
 }

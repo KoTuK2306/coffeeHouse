@@ -18,7 +18,7 @@
   text-transform: uppercase;
   color: var(--milkCoffee);
   margin: 110px 0;
-  letter-spacing: 0.05em;
+  letter-spacing: var(--mainLetterSpacing);
 }
 
 .cardsWrapper {
@@ -52,7 +52,7 @@
 .description {
   font-family: var(--OpenSans300);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: var(--mainLetterSpacing);
   font-size: 13px;
   color: var(--milkCoffee);
   margin-top: 20px;

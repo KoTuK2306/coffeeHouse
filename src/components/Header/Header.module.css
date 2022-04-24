@@ -1,7 +1,5 @@
 .header {
-  display: flex;
   align-items: center;
-  padding: 50px 245px;
   background-color: var(--whiteСhocolate);
 }
 
