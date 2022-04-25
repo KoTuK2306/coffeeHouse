@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Coffee } from "./../../../interfaces/Coffee";
+import { Coffee } from "../../../interfaces/Coffee";
 import classes from "./CoffeeCard.module.css";
 
 type CoffeeProps = Omit<Coffee, "id">;

@@ -1,15 +1,6 @@
 .reasons {
-  width: 100%;
-  height: 565px;
-  background-color: var(--color1);
-}
-
-.content {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 245px;
   justify-content: space-between;
+  background-color: var(--whiteСhocolate);
 }
 
 .title {
@@ -17,15 +8,17 @@
   font-family: var(--OpenSans400);
   font-size: 24px;
   text-transform: uppercase;
-  color: var(--color2);
-  margin-top: 115px;
-  letter-spacing: 0.05em;
+  color: var(--milkCoffee);
+  margin-top: 60px;
+  margin-bottom: 100px;
+  letter-spacing: var(--mainLetterSpacing);
 }
 
 .cardsWrapper {
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto 100px auto;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 125px;
+  margin: 0 auto 50px auto;
 }
 
 .card {
@@ -33,10 +26,6 @@
   flex-direction: column;
   align-items: center;
   width: 160px;
-}
-
-.card:not(:first-child) {
-  margin-left: 125px;
 }
 
 .iconWrapper {
@@ -50,15 +39,15 @@
 }
 
 .icon {
-  color: var(--color2);
+  color: var(--milkCoffee);
 }
 
 .description {
   font-family: var(--OpenSans300);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: var(--mainLetterSpacing);
   font-size: 13px;
-  color: var(--color2);
+  color: var(--milkCoffee);
   margin-top: 20px;
   line-height: 18px;
   text-align: center;

@@ -1,37 +1,35 @@
 .preview {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: 1021px;
-  background-color: var(--color1);
+  background: no-repeat url("/public/coffeeBeans.png");
+  background-position: right top;
+  background-size: 55%;
+  background-color: var(--whiteСhocolate);
 }
 
 .textWithImage {
   display: flex;
-  justify-content: space-between;
-  padding-left: 245px;
 }
 
 .textWrapper {
   margin-top: 75px;
 }
 
-.bigText {
+.title {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 48px;
-  color: var(--color2);
-  letter-spacing: 0.05em;
+  color: var(--milkCoffee);
+  letter-spacing: var(--mainLetterSpacing);
 }
 
-.smallText {
+.subTitle {
   margin-top: 32px;
   text-transform: uppercase;
   font-size: 26px;
   font-family: var(--OpenSans300);
-  color: var(--color2);
-  letter-spacing: 0.05em;
+  color: var(--milkCoffee);
+  letter-spacing: var(--mainLetterSpacing);
 }
 
 .button {
@@ -39,20 +37,17 @@
   width: 322px;
   height: 68px;
   border-radius: 7px;
-  background: var(--color3);
+  background: var(--milkChocolate);
   outline: none;
   border: none;
   font-size: 16px;
-  color: var(--color1);
+  color: var(--whiteСhocolate);
   font-family: var(--OpenSans300);
   cursor: pointer;
 }
 
-.coffeeBeans {
-  height: 413px;
-}
-
 .chevronWrapper {
+  margin-top: 90px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -63,33 +58,31 @@
 }
 
 .weekOffers {
+  display: grid;
   display: flex;
   flex-direction: column;
-  padding: 0 245px;
-  margin-bottom: 87px;
 }
 
 .offerTitle {
+  margin-top: 90px;
   text-transform: uppercase;
   font-family: var(--OpenSans400);
-  letter-spacing: 0.05em;
+  letter-spacing: var(--mainLetterSpacing);
   margin-bottom: 70px;
-  color: var(--color2);
+  color: var(--milkCoffee);
 }
 
 .imagesWrapper {
-  display: flex;
-  flex-direction: row;
+  padding-bottom: 37px;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-gap: 30px;
 }
 
-.offferImage {
+.offerImage {
   margin: 0;
   padding: 0;
   width: 350px;
   height: 216px;
   border-radius: 10px;
-}
-
-.offferImage:not(:first-child) {
-  margin-left: 30px;
 }

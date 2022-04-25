@@ -14,18 +14,22 @@
 }
 
 :root {
-  --mainMargin: 10%;
+  --mainLetterSpacing: 0.05em;
   --primaryFont: OpenSans, sans-serif;
   --OpenSans300: OpenSans300, sans-serif;
   --OpenSans400: OpenSans400, sans-serif;
-  --color1: #fff9d8;
-  --color2: #624530;
-  --color3: #9a6137;
+  --whiteСhocolate: #fff9d8;
+  --milkCoffee: #624530;
+  --milkChocolate: #9a6137;
+  --liteOrange: #e9aa7c;
   --white: #ffffff;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: var(--primaryFont);
 }

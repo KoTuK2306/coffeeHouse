@@ -1,11 +1,12 @@
 import { FC } from "react";
+import { Container } from "../../layouts/Container";
+import { reasonsIcons } from "../../reasonsIcons";
 import classes from "./Reasons.module.css";
-import { reasonsIcons } from "./../../reasonsIcons";
 
 export const Reasons: FC = () => {
   return (
-    <section className={classes.reasons}>
-      <div className={classes.content}>
+    <section>
+      <Container className={classes.reasons}>
         <p className={classes.title}>любовь и польза в каждом глотке</p>
         <div className={classes.cardsWrapper}>
           {reasonsIcons.map(({ id, description, icon }) => (
@@ -17,7 +18,7 @@ export const Reasons: FC = () => {
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

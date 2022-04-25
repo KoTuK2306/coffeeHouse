@@ -1,31 +1,33 @@
 import { FC } from "react";
+import { Link } from "../../interfaces/Links";
+import { makePathToPublic } from "../../utils/makePathToPublic";
+import { Container } from "../../layouts/Container";
 import classes from "./Header.module.css";
-import { Link } from "./../../interfaces/Links";
 
-const headerLinks = [
-  { id: 1, href: "#", title: "Главная" },
-  { id: 2, href: "#", title: "О нас" },
-  { id: 3, href: "#", title: "Заказать" },
-  { id: 4, href: "#", title: "Отзывы" },
-  { id: 5, href: "#", title: "Продукция" },
+const headerLinks: Link[] = [
+  { id: "home", href: "#", title: "Главная" },
+  { id: "aboutUs", href: "#", title: "О нас" },
+  { id: "toOrder", href: "#", title: "Заказать" },
+  { id: "reviews", href: "#", title: "Отзывы" },
+  { id: "products", href: "#", title: "Продукция" },
 ];
 
 export const Header: FC = () => {
   return (
-    <header className={classes.header}>
-      <div className={classes.headerContent}>
+    <header>
+      <Container className={classes.header}>
         <h1 className={classes.title}>coffee</h1>
-        <div className={classes.buttonsWrapper}>
-          {headerLinks.map(({ id, href, title }: Link) => (
+        <div className={classes.linksWrapper}>
+          {headerLinks.map(({ id, href, title }) => (
             <a key={id} className={classes.link} href={href}>
               {title}
             </a>
           ))}
           <button className={classes.cart}>
-            <img className={classes.cartIcon} src={`${process.env.PUBLIC_URL}/cart.svg`} alt="cart" />
+            <img className={classes.cartIcon} src={makePathToPublic("/cart.svg")} alt="cart" />
           </button>
         </div>
-      </div>
+      </Container>
     </header>
   );
 };
