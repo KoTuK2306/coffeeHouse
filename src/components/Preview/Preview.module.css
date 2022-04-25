@@ -1,4 +1,6 @@
 .preview {
+  display: flex;
+  flex-direction: column;
   background: no-repeat url("/public/coffeeBeans.png");
   background-position: right top;
   background-size: 55%;
@@ -71,6 +73,7 @@
 }
 
 .imagesWrapper {
+  padding-bottom: 37px;
   display: grid;
   grid-template-columns: repeat(3, max-content);
   grid-gap: 30px;

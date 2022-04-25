@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Link } from "../../interfaces/Links";
-import { MainPadding } from "../../layouts/MainPadding";
+import { Container } from "../../layouts/Container";
 import classes from "./Footer.module.css";
 
 const links: Link[] = [
@@ -18,26 +18,28 @@ const links: Link[] = [
 
 export const Footer: FC = () => {
   return (
-    <MainPadding className={classes.footer}>
-      <div className={classes.content}>
-        <h1 className={classes.title}>coffee</h1>
-        <div className={classes.linksWrapper}>
-          {links.map(({ title, href, id }) => (
-            <a key={id} href={href} className={classes.link}>
-              {title}
+    <footer>
+      <Container className={classes.footer}>
+        <div className={classes.content}>
+          <h1 className={classes.title}>coffee</h1>
+          <div className={classes.linksWrapper}>
+            {links.map(({ title, href, id }) => (
+              <a key={id} href={href} className={classes.link}>
+                {title}
+              </a>
+            ))}
+          </div>
+          <div className={classes.contacts}>
+            <button className={classes.makeOrder}>Сделать заказ</button>
+            <a href="tel:+7(123)456-67-89" className={classes.phone}>
+              +7(123)456-67-89
             </a>
-          ))}
+            <a href="mailto: katyusha.karachinskaya@yandex.ru" className={classes.mail}>
+              katyusha.karachinskaya@yandex.ru
+            </a>
+          </div>
         </div>
-        <div className={classes.contacts}>
-          <button className={classes.makeOrder}>Сделать заказ</button>
-          <a href="tel:+7(123)456-67-89" className={classes.phone}>
-            +7(123)456-67-89
-          </a>
-          <a href="mailto: katyusha.karachinskaya@yandex.ru" className={classes.mail}>
-            katyusha.karachinskaya@yandex.ru
-          </a>
-        </div>
-      </div>
-    </MainPadding>
+      </Container>
+    </footer>
   );
 };

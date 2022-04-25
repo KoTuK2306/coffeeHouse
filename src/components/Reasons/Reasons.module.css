@@ -1,14 +1,6 @@
 .reasons {
-  width: 100%;
-  background-color: var(--whiteСhocolate);
-}
-
-.content {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 245px;
   justify-content: space-between;
+  background-color: var(--whiteСhocolate);
 }
 
 .title {
@@ -17,7 +9,8 @@
   font-size: 24px;
   text-transform: uppercase;
   color: var(--milkCoffee);
-  margin: 110px 0;
+  margin-top: 60px;
+  margin-bottom: 100px;
   letter-spacing: var(--mainLetterSpacing);
 }
 
@@ -25,7 +18,7 @@
   display: grid;
   grid-auto-flow: column;
   grid-gap: 125px;
-  margin: 0 auto 100px auto;
+  margin: 0 auto 50px auto;
 }
 
 .card {

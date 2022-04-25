@@ -1,14 +1,8 @@
 .header {
-  align-items: center;
-  background-color: var(--whiteСhocolate);
-}
-
-.headerContent {
-  width: 100%;
-  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--whiteСhocolate);
 }
 
 .title {

@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Link } from "../../interfaces/Links";
 import { makePathToPublic } from "../../utils/makePathToPublic";
-import { MainPadding } from "../../layouts/MainPadding";
+import { Container } from "../../layouts/Container";
 import classes from "./Header.module.css";
 
 const headerLinks: Link[] = [
@@ -14,8 +14,8 @@ const headerLinks: Link[] = [
 
 export const Header: FC = () => {
   return (
-    <MainPadding className={classes.header}>
-      <div className={classes.headerContent}>
+    <header>
+      <Container className={classes.header}>
         <h1 className={classes.title}>coffee</h1>
         <div className={classes.linksWrapper}>
           {headerLinks.map(({ id, href, title }) => (
@@ -27,7 +27,7 @@ export const Header: FC = () => {
             <img className={classes.cartIcon} src={makePathToPublic("/cart.svg")} alt="cart" />
           </button>
         </div>
-      </div>
-    </MainPadding>
+      </Container>
+    </header>
   );
 };
